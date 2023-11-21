@@ -151,7 +151,7 @@
                         <div class="col-md-3">
                             <div class="pay_option" bis_skin_checked="1">
                                 <input type="radio" class="default" name="pay_method" id="default">
-                                <input type="radio" class="checkbox" name="pay_method" id="crypto">
+                                <input type="radio" class="checkbox1" name="pay_method" id="crypto">
                                 <label for="crypto">
                                     <img src="images/binance.png" class="img-fulid" loading="lazy" alt="">
                                 </label>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="pay_option" bis_skin_checked="1">
-                                <input type="radio" class="checkbox1" name="pay_method" id="api_m">
+                                <input type="radio" class="checkbox" name="pay_method" id="api_m">
                                 <label for="api_m">
                                     <img src="images/gpay_logo.png" class="img-fulid" loading="lazy" alt="">
                                 </label>
@@ -193,7 +193,7 @@
                                 <label for="input-field" class="input-label">Credit Code (case sensitive) </label>
                                 <span class="input-highlight"></span>
                             </div>
-                            <buttton class="btn_submit mt-4">Topup</buttton>
+                            <buttton class="btn_submit mt-4">Next</buttton>
                         </form>
                     </div>
                     <!-- crypto  -->
@@ -204,7 +204,10 @@
                                 <label for="input-field" class="input-label">Enter Your Ammount</label>
                                 <span class="input-highlight"></span>
                             </div>
-                            <buttton class="btn_submit mt-4">Topup</buttton>
+                            <div class="input-container">
+
+                                <buttton class="btn_submit btn_nxt mt-4">Next</buttton>
+                            </div>
                         </form>
                     </div>
 
@@ -283,7 +286,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6"><div class="social">
+                    <div class="col-md-6">
+                        <div class="social">
                             <a href="https://facebook.com" target="_blank">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
@@ -356,7 +360,7 @@
     <script src="assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $(".checkbox").change(function () {
                 if (this.checked) {
                     $(".promo_").fadeIn();
@@ -387,15 +391,19 @@
             });
             $(".btn_back").click(function () {
                 // if (this.checked) {
-                    $(".promo_").fadeOut(100);
-                    $(".crypto_").fadeOut(100);
-                    $(".card_").fadeOut(100);
-                    $(".code_option").fadeOut(100);
-                    $(".wallet_r_top").fadeIn(2000);
-                    $(".default").click();
-                    
+                $(".promo_").fadeOut(100);
+                $(".crypto_").fadeOut(100);
+                $(".card_").fadeOut(100);
+                $(".code_option").fadeOut(100);
+                $(".wallet_r_top").fadeIn(2000);
+                $(".default").click();
+
                 // }
             });
+            $(".btn_nxt").click(function () {
+                $(".crypto_").fadeOut(100);
+
+            })
         })
     </script>
 

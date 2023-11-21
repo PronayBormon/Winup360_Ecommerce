@@ -17,6 +17,10 @@ var swiper1 = new Swiper(".main_slider_box", {
         slidesPerView: 1,
         spaceBetween: 20
       },
+      377: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
       480: {
         slidesPerView: 2,
         spaceBetween: 20
@@ -54,6 +58,10 @@ var swiper1 = new Swiper(".main_slider_box", {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20
+      },
+      377: {
+        slidesPerView: 2,
         spaceBetween: 20
       },
       480: {
@@ -97,6 +105,10 @@ var swiper1 = new Swiper(".main_slider_box", {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20
+      },
+      377: {
+        slidesPerView: 2,
         spaceBetween: 20
       },
       480: {
