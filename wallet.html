@@ -150,6 +150,7 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="pay_option" bis_skin_checked="1">
+                                <input type="radio" class="default" name="pay_method" id="default">
                                 <input type="radio" class="checkbox" name="pay_method" id="crypto">
                                 <label for="crypto">
                                     <img src="images/binance.png" class="img-fulid" loading="lazy" alt="">
@@ -391,6 +392,8 @@
                     $(".card_").fadeOut(100);
                     $(".code_option").fadeOut(100);
                     $(".wallet_r_top").fadeIn(2000);
+                    $(".default").click();
+                    
                 // }
             });
         })

@@ -1820,7 +1820,7 @@ header .close:hover {
 }
 
 .pay_option input {
-    /* display: none; */
+    display: none;
 }
 
 .pay_option label {
@@ -2591,6 +2591,92 @@ header .close:hover {
 .social a i{
 
 }
+.card_list{
+
+}
+.card_list ul li{
+
+display: flex;
+
+justify-content: space-between;
+
+background: #373737;
+
+padding: 15px;
+
+border-radius: 15px;
+
+margin: 5px 0px;
+}
+.card_list ul{
+
+list-style: none;
+
+padding: 0;
+}
+.card_list ul li button{
+
+background: transparent;
+
+border: navajowhite;
+
+color: #fff;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+}
+.card_list ul li button i{
+    color: #fff;
+    margin-left: 5px;
+}
+.card_pmt_details{
+
+display: flex;
+
+align-items: start;
+
+justify-content: space-between;
+}
+.card_pmt_details img{
+
+width: 60px;
+
+height: auto;
+
+margin-right: 15px;
+}
+.card_pmt_details h6{
+
+margin: 0;
+
+font-size: 18px;
+}
+.card_pmt_details p{
+
+color: #d4d0d0;
+
+margin: 0;
+
+font-size: 12px;
+}
+.card_pmt_details{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 992px){
     .s_txt p {
         font-size: 12px;
@@ -2768,5 +2854,17 @@ header .close:hover {
     .bonus_section h5 {
         font-size: 16px;
         line-height: 16px;
+    }
+    .card_pmt_details h6 {
+        margin: 0;
+        font-size: 14px;
+    }
+    .card_list ul li button {
+        font-size: 12px;
+    }
+    .we_accept {
+        justify-content: center;
+        padding: 10px 0px;
+        border-top: 1px solid #a1a1a1;
     }
 }
