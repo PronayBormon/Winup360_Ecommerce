@@ -100,7 +100,7 @@ body::after {
     font-size: 90px;
     line-height: 73px;
     font-weight: 900;
-    color: #38E54D;
+    color: #b9ff28;
 }
 
 .s_txt h6 {
@@ -138,7 +138,7 @@ body::after {
     text-decoration: none;
     font-weight: 700;
     transition: .4s all ease-in-out;
-    color: #7eb115;
+    color: #000;
 }
 
 .s_link:hover {
@@ -224,9 +224,10 @@ body::after {
 }
 
 .add_cart:hover {
-    background: linear-gradient(180deg, #393ec2, #3503c2);
-    background-color: #6167ff;
-    color: #fff;
+    /* background: linear-gradient(180deg, #393ec2, #3503c2); */
+    /* background-color: #6167ff; */
+    color: #000;
+    background: #b9ff28;
 }
 
 .sell_fast {
@@ -371,9 +372,9 @@ body::after {
 }
 
 .sell_fast:hover .add_cart {
-    background: linear-gradient(180deg, #26b426, #2c972c);
-    color: #fff;
-    border: 1px solid #379237;
+    background: #b9ff28;
+    color: #000;
+    border: 1px solid #b9ff28;
 }
 
 /* banner section start her e  
