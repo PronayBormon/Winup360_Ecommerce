@@ -400,18 +400,12 @@ body::after {
 .banner_img a {}
 
 .bonus_section {
-
-background: linear-gradient(298.61deg, lime -4.14%, #94be3c 93.23%);
-
-height: 100%;
-
-padding: 20px;
-
-border-radius: 20px;
-
-display: flex;
-
-align-items: center;
+    background: linear-gradient(298.61deg, #b5f927 -4.14%, #2b8000 93.23%);
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .bonus_section h5 {
