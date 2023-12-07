@@ -1774,15 +1774,15 @@ header .close:hover {
 
 .payment_section {
 
-background: #373737;
+    background: #373737;
 
-padding: 20px;
+    padding: 20px;
 
-border-radius: 20px;
+    border-radius: 20px;
 
-margin-bottom: 10px;
+    margin-bottom: 10px;
 
-display: none;
+    display: none;
 }
 
 .choose_method {
@@ -3298,22 +3298,26 @@ display: none;
     justify-content: center;
     align-items: center;
 }
-.cart_link a p{
+
+.cart_link a p {
     margin: 0;
     display: none;
 }
 
 .cart_link a i {}
-.l_alrt{
+
+.l_alrt {
     color: red;
     font-size: 14px;
 }
-.btn_checkout.disabled{
-   position: relative;
-   z-index: 0;
-   pointer-events: none;
+
+.btn_checkout.disabled {
+    position: relative;
+    z-index: 0;
+    pointer-events: none;
 }
-.btn_checkout.disabled::after{
+
+.btn_checkout.disabled::after {
     content: "";
     position: absolute;
     left: 0;
@@ -3323,4 +3327,78 @@ display: none;
     background: #0000009e;
     border-radius: 15px;
     z-index: 1;
+}
+
+.login_modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000b8;
+    z-index: 9;
+    display: none;
+}
+
+.main_content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+}
+
+.cls_mdal {
+    
+padding: 10px;
+    
+background: transparent;
+    
+color: #fff;
+    
+position: absolute;
+    
+top: 0px;
+    
+right: 0;
+    
+background: #000;
+    
+border-radius: 50px;
+    
+box-shadow: 0 0 20px #ffffff38;
+    
+height: fit-content;
+    
+width: 20px;
+    
+height: 20px;
+    
+display: flex;
+    
+justify-content: center;
+    
+align-items: center;
+}
+.cls_mdal i{
+
+/* height: 10px; */
+
+/* width: 10px; */
+
+background: transparent;
+
+color: #fff;
+
+font-size: 9px;
+}
+.main_content .log_regi{
+    height: 90vh;
+}
+.main_content .login_section {
+    height: 70vh;
+    overflow: auto;
+}
+.main_content .login_section::-webkit-scrollbar{
+    display: none;
 }

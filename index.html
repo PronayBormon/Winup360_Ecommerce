@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="assets/fontawesome-free-6.4.2/css/all.min.css">
 
   <!-- style css  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet"
+    media="screen">
   <link rel="stylesheet" href="css/styles.css"> <!--Styles-->
 
 </head>
@@ -759,7 +761,9 @@
   <!-- footer part end here  -->
 
   <div class="cart_link">
-    <a href="cart.html"><p>Shopping Cart</p> <i class="fa-solid fa-cart-shopping"></i></a>
+    <a href="cart.html">
+      <p>Shopping Cart</p> <i class="fa-solid fa-cart-shopping"></i>
+    </a>
   </div>
 
   <!-- loader  -->
@@ -863,6 +867,153 @@
     </div>
   </div>
 
+  <!-- login popup  -->
+  <div class="login_modal">
+    <div class="main_content">
+      
+      <div class="log_regi">
+        <button class="cls_mdal"><i class="fa-solid fa-x"></i></button>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-login"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">Login</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-regis"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Registration</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="login_section">
+              <form action="">
+                <h5>Login</h5>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-container">
+                      <input placeholder="User name" class="input-field" type="text">
+                      <label for="input-field" class="input-label">User name </label>
+                      <span class="input-highlight"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input-container">
+                      <input placeholder="Password" class="input-field" id="password-field" type="password">
+                      <label for="input-field" class="input-label">Password </label>
+                      <span class="input-highlight"></span>
+                      <i toggle="#password-field" class="fa-solid fa-eye toggle-password"></i>
+                    </div>
+                  </div>
+                  <div class="row pe-0">
+                    <div class="col-6">
+                      <div class="input-container">
+                        <a href="javascript:" class="f_link">Forget Password?</a>
+                      </div>
+                    </div>
+                    <div class="col-6 px-0">
+                      <div class="input-container text-end" bis_skin_checked="1">
+                        <input class="btn_submit" value="Login" type="button">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-regis" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="login_section">
+              <form action="">
+                <h5>Registration</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="input-container">
+                      <input placeholder="First Name " class="input-field" type="text">
+                      <label for="input-field" class="input-label">First Name </label>
+                      <span class="input-highlight"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-container">
+                      <input placeholder="Last Name " class="input-field" type="text">
+                      <label for="input-field" class="input-label">Last Name </label>
+                      <span class="input-highlight"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input-container">
+                      <input placeholder="Email" class="input-field" type="text">
+                      <label for="input-field" class="input-label">Email </label>
+                      <span class="input-highlight"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input_group input-container">
+                      <label for="nationality" class="s_label">Phone</label>
+                      <input placeholder="1700000000" id="mobile_code" class="input-field" type="text">
+                      <span class="input-highlight"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input-container">
+                      <input placeholder="Password" class="input-field" id="password-field2" type="password">
+                      <label for="input-field" class="input-label">Password </label>
+                      <span class="input-highlight"></span>
+                      <i toggle="#password-field2" class="fa-solid fa-eye toggle-password"></i>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input-container">
+                      <input placeholder="Date Of Birth" onfocus="type='date'" class="input-field" type="text">
+                      <label for="input-field" class="input-label">Date Of Birth</label>
+                      <span class="input-highlight"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input_group input-container">
+                      <label for="gender" class="s_label">Gender</label>
+                      <select name="" id="gender" class="form-control input-field">
+                        <option value="" selected disabled>Select One </option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Others</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input_group input-container">
+                      <label for="nationality" class="s_label">Nationality</label>
+                      <select name="" id="nationality" class="form-control input-field">
+                        <option value="">USA</option>
+                        <option value="" selected>Bangladesh</option>
+                        <option value="">UAE </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input_group input-container">
+                      <label for="residence" class="s_label">Country Of Residence</label>
+                      <select name="" id="residence" class="form-control input-field">
+                        <option value="">USA</option>
+                        <option value="" selected>Bangladesh</option>
+                        <option value="">UAE </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="input-container">
+                      <input type="submit" class="btn_submit" value="Update">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script> <!--Jquery Cdn-->
   <script src="assets/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
@@ -882,21 +1033,28 @@
       });
     });
   </script> -->
-<script>
-  $(document).ready(function(){
-    $(".show_details").click(function(){
-      $(".details_modal").fadeIn();
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+  <script>
+    // -----Country Code Selection
+    $("#mobile_code").intlTelInput({
+      initialCountry: "bd",
+      separateDialCode: true,
     });
-    $(".btn_mclose").click(function(){
-      $(".details_modal").fadeOut();
-    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".show_details").click(function () {
+        $(".details_modal").fadeIn();
+      });
+      $(".btn_mclose").click(function () {
+        $(".details_modal").fadeOut();
+      });
 
-
-    $(".cart_link").on("mouseover", function(){
-      $(".cart_link p").fadeIn();
+      $(".cart_link").on("mouseover", function () {
+        $(".cart_link p").fadeIn();
+      })
     })
-  })
-</script>
+  </script>
 
 
 </body>
