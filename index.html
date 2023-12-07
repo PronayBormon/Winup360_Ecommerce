@@ -95,7 +95,7 @@
                     <h1>Win</h1>
                     <h6>Tesla Models Plaid</h6>
                     <p>Buy lottery Credit <br> and make it yours!</p>
-                    <a href="#" class="s_link">See Details</a>
+                    <a href="javascript:" class="s_link show_details">See Details</a>
                   </div>
                 </div>
               </div>
@@ -342,7 +342,7 @@
                           <div class="row">
                             <div class="col-md-12">
                               <div class="d-flex">
-                                <a href="" class="btn_details">View Details</a>
+                                <a href="javascript:" class="btn_details show_details">View Details</a>
                                 <button type="button">add to cart </button>
                               </div>
                             </div>
@@ -434,7 +434,7 @@
                           <div class="row">
                             <div class="col-md-12">
                               <div class="d-flex">
-                                <a href="" class="btn_details">View Details</a>
+                                <a href="javascript:" class="btn_details show_details">View Details</a>
                                 <button type="button">add to cart </button>
                               </div>
                             </div>
@@ -758,6 +758,11 @@
   </footer>
   <!-- footer part end here  -->
 
+  <!-- loader  -->
+  <div class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+  </div>
 
   <!-- share popup  -->
   <div class="modal_share">
@@ -873,7 +878,16 @@
       });
     });
   </script> -->
-
+<script>
+  $(document).ready(function(){
+    $(".show_details").click(function(){
+      $(".details_modal").fadeIn();
+    });
+    $(".btn_mclose").click(function(){
+      $(".details_modal").fadeOut();
+    });
+  })
+</script>
 
 
 </body>
