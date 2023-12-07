@@ -2781,12 +2781,13 @@ header .close:hover {
 
 .share_link ul {}
 
-.share_link ul li{
+.share_link ul li {
     padding: 5px 0px;
     border-bottom: 1px solid #3e3a3a26;
     margin: 0;
 }
-.share_link ul li:last-child{
+
+.share_link ul li:last-child {
     border: none;
 }
 
@@ -2807,32 +2808,37 @@ header .close:hover {
     align-items: center;
     margin-right: 5px;
 }
-.pay_m_title h6{
+
+.pay_m_title h6 {
     color: #fff;
 }
-.btn_back{
+
+.btn_back {
     background: #373737;
     padding: 5px 20px;
     font-size: 20px;
     border-radius: 10px;
 }
-.btn_back i{    
+
+.btn_back i {
     color: lime;
 }
 
-.mobile_view{
+.mobile_view {
     display: none;
 }
-.desktop_view{
+
+.desktop_view {
     display: block;
 }
 
 
-@media(max-width: 1201px){
-    .mobile_view{
+@media(max-width: 1201px) {
+    .mobile_view {
         display: block;
     }
-    .desktop_view{
+
+    .desktop_view {
         display: none;
     }
 }
@@ -3045,12 +3051,13 @@ header .close:hover {
     .profile_right h1 {
         margin-left: 0px;
     }
+
     .share_link {
         top: 0px;
         left: 20px;
         right: auto;
     }
-    
+
 }
 
 @media(max-width: 768px) {
@@ -3061,6 +3068,7 @@ header .close:hover {
     .slide_box img {
         min-height: 170px;
     }
+
     .share_link {
         top: 0px;
         left: 20px;
@@ -3144,7 +3152,8 @@ header .close:hover {
         height: 10px;
     }
 }
-@media(max-width: 425px){
+
+@media(max-width: 425px) {
     .share_link {
         top: 50px;
     }
@@ -3167,11 +3176,13 @@ header .close:hover {
     z-index: 99999;
     display: none;
 }
-@keyframes sk-scaleout{
+
+@keyframes sk-scaleout {
     0% {
         -webkit-transform: scale(0);
         transform: scale(0);
-    }    
+    }
+
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -3180,79 +3191,107 @@ header .close:hover {
 }
 
 /* login page css star here  */
-.log_regi{
+.log_regi {
 
-background: #373737;
+    background: #373737;
 
-padding: 40px;
+    padding: 40px;
 
-margin: 20px 0px;
+    margin: 20px 0px;
 
-border-radius: 20px;
+    border-radius: 20px;
 
-box-shadow: 0 0 10px #00000054;
+    box-shadow: 0 0 10px #00000054;
 }
-.log_regi .nav-pills{
 
-margin: auto;
+.log_regi .nav-pills {
 
-text-align: center;
+    margin: auto;
 
-display: flex;
+    text-align: center;
 
-justify-content: center;
+    display: flex;
 
-background: #1f1f1f;
+    justify-content: center;
 
-width: fit-content;
+    background: #1f1f1f;
 
-border-radius: 10px;
+    width: fit-content;
 
-overflow: hidden;
+    border-radius: 10px;
+
+    overflow: hidden;
 }
-.log_regi .nav-item{
 
-}
-.log_regi .nav-item .nav-link{
+.log_regi .nav-item {}
 
-border-radius: 0;
+.log_regi .nav-item .nav-link {
 
-color: #fff;
-}
-.log_regi .nav-item .nav-link.active{
+    border-radius: 0;
 
-background: lime;
-
-color: #000;
-}
-.login_section{
-
-}
-.login_section form{
-
-}
-.login_section h5{
     color: #fff;
 }
-.login_section .input-container{
+
+.log_regi .nav-item .nav-link.active {
+
+    background: lime;
+
+    color: #000;
+}
+
+.login_section {}
+
+.login_section form {}
+
+.login_section h5 {
+    color: #fff;
+}
+
+.login_section .input-container {
     margin: 20px 0px;
 }
-.input-container i{
+
+.input-container i {
     position: absolute;
     right: 10px;
     top: 50%;
     color: #fff;
     transform: translateY(-50%);
 }
-.f_link{
+
+.f_link {
     text-decoration: none;
     font-size: 14px;
     color: #fff;
 }
-.f_link:hover{
+
+.f_link:hover {
     color: lime;
 }
-.input_group select{
+
+.input_group select {
     border-radius: 0;
 }
+
 /* login page css end here  */
+
+.cart_link {
+    background: lime;
+    width: fit-content;
+    padding: 10px 5px;
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 20px #00000045;
+    z-index: 9;
+}
+
+.cart_link a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.cart_link a i {}
