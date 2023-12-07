@@ -327,7 +327,7 @@
                         <div class="c_price">
                           <div class="creadit_ticket">
                             <p>Lottery Creadit</p>
-                            <h1>BDT125</h1>
+                            <h1>BDT325</h1>
                           </div>
                         </div>
                       </div>
@@ -352,11 +352,23 @@
                           </div>
                         </div>
                         <div class="button_">
-                          <button type="button" class="btn_share active"><i class="fa-solid fa-heart"></i></button>
-                          <button type="button" class="btn_share share_btn"><i class="fa-solid fa-share"></i></button>
-
-
+                          <button type="button" class="btn_share "><i class="fa-solid fa-heart"></i></button>
+                          <button type="button" class="btn_share share_btn "><i class="fa-solid fa-share"></i></button>
                         </div>
+                        <!-- share modal  -->
+                        <!-- <div class="share_link">
+                          <ul>
+                            <li>
+                              <a href="#"><i class="fa-brands fa-facebook-f"></i>Share On Facebook</a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa-brands fa-twitter"></i>Share On Twitter</a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa-brands fa-linkedin-in"></i>Share On LinkeIn</a>
+                            </li>
+                          </ul>
+                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -418,7 +430,7 @@
                           <h1>Win</h1>
                           <h2>BRABUS Ultimate E or BDT150,000</h2>
                           <h6>Buy a lottery credit and make it yours!</h6>
-                          <span>BDT325.00</span>
+                          <span>BDT125.00</span>
                           <div class="row">
                             <div class="col-md-12">
                               <div class="d-flex">
@@ -437,6 +449,20 @@
 
 
                         </div>
+                        <!-- share modal  -->
+                        <!-- <div class="share_link ">
+                          <ul>
+                            <li>
+                              <a href="#"><i class="fa-brands fa-facebook-f"></i>Share On Facebook</a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa-brands fa-twitter"></i>Share On Twitter</a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fa-brands fa-linkedin-in"></i>Share On LinkeIn</a>
+                            </li>
+                          </ul>
+                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -758,6 +784,75 @@
     </div>
   </div>
 
+  <!-- details popup  -->
+  <div class="details_modal">
+    <div class="m_content_">
+      <div class="d-flex justify-content-between">
+        <ul class="nav nav-pills tb_btns tb_btns mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item tb_btns_left" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-prize"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">Prize Details </button>
+          </li>
+          <li class="nav-item tb_btns_right" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-product"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Product Details </button>
+          </li>
+        </ul>
+        <button class="btn_mclose" type="button"><i class="fa-solid fa-x"></i></button>
+      </div>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane p_details fade show active" id="pills-prize" role="tabpanel"
+          aria-labelledby="pills-home-tab" tabindex="0">
+          <p>It is the highest-performance version of the Model S sedan, with a claimed 0-100 kmph acceleration time of
+            under 2 seconds, making it one of the quickest production cars ever made. The Plaid features three electric
+            motors, producing a combined 1,020 horsepower, and has a range of up to 600km on a single charge. It also
+            boasts an updated interior and exterior design, with a new infotainment system and a futuristic Yoke
+            steering wheel.</p>
+          <ul>
+            <p> *The prize must be registered in Dubai under the name of the winner only.</p>
+            <li>
+              Specifications
+            </li>
+            <li>
+              Color
+            </li>
+            <li>
+              Solid Black
+            </li>
+            <li>
+              Wheels
+            </li>
+            <li>
+              21" Arachnid
+            </li>
+            <li>
+              Interior
+            </li>
+            <li>
+              Black and White Premium Interior with Carbon Fiber Décor
+            </li>
+            <li>
+              Steering
+            </li>
+            <li>
+              Yoke Steering
+            </li>
+            <li>
+              Autopilot
+            </li>
+            <li>
+              Yes
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane p_details fade" id="pills-product" role="tabpanel" aria-labelledby="pills-profile-tab"
+          tabindex="0">
+          <p>Avail this credit on premium clothing and accessories at the idealzbasics digital store. Simply complete
+            your purchase, switch to lotterybasics and start shopping!</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script> <!--Jquery Cdn-->
@@ -767,6 +862,17 @@
   <script src="js/countdown.js"></script>
   <script src="js/slider_script.js"></script>
   <script src="js/share_modal.js"></script>
+  <!-- <script>
+    $(document).ready(function () {
+      $('.share_btn').click(function () {
+        if ($('.c_content_right .share_link').is(':hidden')) {
+          $('.c_content_right .share_link').show();
+        } else {
+          $('.c_content_right .share_link').hide();
+        }
+      });
+    });
+  </script> -->
 
 
 
