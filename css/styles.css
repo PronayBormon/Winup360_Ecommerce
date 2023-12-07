@@ -1774,13 +1774,15 @@ header .close:hover {
 
 .payment_section {
 
-    background: #373737;
+background: #373737;
 
-    padding: 20px;
+padding: 20px;
 
-    border-radius: 20px;
+border-radius: 20px;
 
-    margin-bottom: 10px;
+margin-bottom: 10px;
+
+display: none;
 }
 
 .choose_method {
@@ -3292,6 +3294,13 @@ header .close:hover {
     text-decoration: none;
     color: #000;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart_link a p{
+    margin: 0;
+    display: none;
 }
 
 .cart_link a i {}

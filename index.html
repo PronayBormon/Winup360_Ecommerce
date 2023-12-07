@@ -759,7 +759,7 @@
   <!-- footer part end here  -->
 
   <div class="cart_link">
-    <a href="cart.html">Shopping Cart <i class="fa-solid fa-cart-shopping"></i></a>
+    <a href="cart.html"><p>Shopping Cart</p> <i class="fa-solid fa-cart-shopping"></i></a>
   </div>
 
   <!-- loader  -->
@@ -890,6 +890,11 @@
     $(".btn_mclose").click(function(){
       $(".details_modal").fadeOut();
     });
+
+
+    $(".cart_link").on("mouseover", function(){
+      $(".cart_link p").fadeIn();
+    })
   })
 </script>
 

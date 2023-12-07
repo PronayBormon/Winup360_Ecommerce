@@ -212,7 +212,10 @@
                             </form>
                         </div>
                     </div>
-                    <div class="payment_section">
+                    <div class="promo_box offer_box">
+                        <a href="javascript:" class="btn_submit btn_checkout" style="text-decoration: none ; width: 100%; text-align: center;">Checkout</a>
+                    </div>
+                    <div class="payment_section ">
                         <h2>Payment method</h2>
                         <!-- choose payment  -->
                         <div class="choose_method">
@@ -406,6 +409,10 @@
                     $(".card_form").fadeIn();
                 }
             });
+
+            $(".btn_checkout").click(function(){
+                $(".payment_section").fadeIn();
+            })
         })
     </script>
     <script>
