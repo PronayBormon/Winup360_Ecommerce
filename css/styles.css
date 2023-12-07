@@ -3304,3 +3304,23 @@ display: none;
 }
 
 .cart_link a i {}
+.l_alrt{
+    color: red;
+    font-size: 14px;
+}
+.btn_checkout.disabled{
+   position: relative;
+   z-index: 0;
+   pointer-events: none;
+}
+.btn_checkout.disabled::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #0000009e;
+    border-radius: 15px;
+    z-index: 1;
+}
