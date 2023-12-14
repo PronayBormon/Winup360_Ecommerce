@@ -3225,7 +3225,9 @@ header .close:hover {
     overflow: hidden;
 }
 
-.log_regi .nav-item {}
+.log_regi .nav-item {
+    padding: 0;
+}
 
 .log_regi .nav-item .nav-link {
 
