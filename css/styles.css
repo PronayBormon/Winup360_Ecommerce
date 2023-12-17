@@ -14,6 +14,10 @@ body {
     background: #1e1e1e;
     font-family: 'Rubik', sans-serif;
 }
+body::-webkit-scrollbar{
+    /* display: none; */
+    width: 1px;
+}
 
 body::after {
     content: "";
@@ -27,7 +31,7 @@ body::after {
 }
 
 .logo_ {
-    border: 1px solid #adadad4d;
+    /* border: 1px solid #adadad4d; */
     padding: 0px 10px;
     border-radius: 5px;
     background: #2b2b2b;
@@ -37,7 +41,9 @@ body::after {
     color: #fff;
 }
 
-.logo_ img {}
+.logo_ img {
+    max-height: 70px;
+}
 
 .navbar {
     box-shadow: 4px 4px 24px rgba(0, 0, 0, .15554);
@@ -238,7 +244,7 @@ body::after {
     box-shadow: 4px 8px 24px rgba(0, 0, 0, .04);
     /* height: 252px; */
     transition: .4s all ease-in-out;
-    height: 250px;
+    /* height: 250px; */
     min-height: max-content;
 }
 
@@ -718,8 +724,8 @@ body::after {
 }
 
 .creadit_ticket h1 {
-    font-size: 30px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 18px;
     letter-spacing: -1.8px;
     color: #000 !important;
     margin: 0;
@@ -1207,14 +1213,14 @@ button {
 }
 
 .popup {
-    background: #fff;
+    background: #272525;
     padding: 25px;
     border-radius: 15px;
     top: 50%;
     max-width: 380px;
     width: 100%;
     /* opacity: 1; */
-    /* box-shadow: 0px 10px 15px rgba(0,0,0,0.1); */
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
     transform: translate(-50%, -50%);
     transition: top 0s 0.2s ease-in-out,
         opacity 0.2s 0s ease-in-out,
@@ -1287,6 +1293,7 @@ header .close:hover {
     font-size: 16px;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    color: #fff;
 }
 
 .content .icons a {
@@ -1294,12 +1301,12 @@ header .close:hover {
     width: 50px;
     font-size: 20px;
     text-decoration: none;
-    border: 1px solid transparent;
+    /* border: 1px solid white; */
 }
 
 .icons a i {
     transition: transform 0.3s ease-in-out;
-    border: 1px solid #00000030;
+    border: 1px solid #ffffff30;
     padding: 5px;
     min-height: 35px;
     min-width: 35px;
@@ -1307,6 +1314,7 @@ header .close:hover {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    color: #fff;
 }
 
 .icons a:hover i {
@@ -1341,16 +1349,18 @@ header .close:hover {
     border: none;
     outline: none;
     font-size: 15px;
+    background: #272525;
+    color: #fff;
 }
 
 .field button {
-    color: #fff;
+    color: #000;
     padding: 5px 18px;
-    background: #7d2ae8;
+    background: #b7fc28;
 }
 
 .field button:hover {
-    background: #8d39fa;
+    background: #81ba0c;
 }
 
 .modal_share {
@@ -3238,9 +3248,9 @@ header .close:hover {
 
 .log_regi .nav-item .nav-link.active {
 
-    background: lime;
+background: #b5f927;
 
-    color: #000;
+color: #000;
 }
 
 .login_section {}
@@ -3905,7 +3915,7 @@ border-r {
 
 .clr_size .custom-select {
     position: relative;
-    max-width: 200px;
+    width: 200px;
     margin-bottom: 10px;
 }
 
@@ -3915,7 +3925,7 @@ border-r {
     padding: 10px 30px 10px 10px;
     border: none;
     /* box-shadow: 1px 4px 5px #3b3939; */
-    background-color: #454857;
+    background-color: #383a42;
     color: white;
     outline: none;
     border-radius: 7px;
@@ -3929,10 +3939,12 @@ border-r {
     position: absolute;
     width: 40px;
     height: 100%;
-    background-color: #1e1e26;
+    background-color: #2d2d31;
     right: 0;
     top: 0;
     pointer-events: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .clr_size span::before {
@@ -4084,16 +4096,17 @@ border-r {
 
 .accordion-body ul {}
 
-.mobile_header {
-
-}
+.mobile_header {}
 
 
 
 .mobile_header a {
     margin: 5px;
     position: relative;
+    width: 100%;
+    text-decoration: none;
 }
+
 .mobile_header a::before {
     content: "";
     width: 100%;
@@ -4104,10 +4117,12 @@ border-r {
     position: absolute;
     border-radius: 10px;
 }
+
 .mobile_header a img {
     max-height: 45px;
-    border-radius: 10px;
+    border-radius: 8px;
     height: 100%;
+    width: 100%;
 }
 
 .mobile_header a.active img {
@@ -4126,3 +4141,84 @@ border-r {
 }
 
 /* product details page end here  */
+
+.header_button a .creadit_ticket {
+    width: 100%;
+    margin: 0;
+}
+
+.header_button a.active::before {
+    display: none;
+}
+
+.swiper-slide a {
+    text-decoration: none;
+}
+
+.p_details img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 320px;
+}
+
+.p_details::-webkit-scrollbar {
+    width: 1px;
+}
+
+.size_chart_modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    box-shadow: 0 0 10px #000000e8;
+    border-radius: 20px;
+    display: none;
+}
+
+.chart_img {
+    width: 350px;
+    background: #373737;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.chart_img .btn_mclose {
+    position: absolute;
+    right: -8px;
+    top: -15px;
+}
+
+.chart_img img {}
+
+.btn_size {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.btn_size i {
+    color: #fff;
+    margin-right: 3px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    font-weight: 600 !important;
+    color: lime !important;
+}
+
+.nav-link .creadit_ticket {
+    height: 40px;
+    border-radius: 10px;
+    margin: 0;
+}
+@media(max-width: 375px){
+    .creadit_ticket h1 {
+        font-size: 16px;
+    }
+}
+.product_gview button.active i{
+    color: red;
+}
