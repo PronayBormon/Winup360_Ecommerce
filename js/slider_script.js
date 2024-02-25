@@ -10,11 +10,15 @@ var swiper1 = new Swiper(".main_slider_box", {
   // fast slide 
   var swiper2 = new Swiper(".pro_slider", {
 
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 20,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
-      320: {
-        slidesPerView: 1,
+      0: {
+        slidesPerView: 2,
         spaceBetween: 20
       },
       377: {
@@ -56,8 +60,8 @@ var swiper1 = new Swiper(".main_slider_box", {
     },
     spaceBetween: 30,
     breakpoints: {
-      320: {
-        slidesPerView: 1,
+      0: {
+        slidesPerView: 2,
         spaceBetween: 20
       },
       377: {
@@ -103,8 +107,8 @@ var swiper1 = new Swiper(".main_slider_box", {
     },
     spaceBetween: 30,
     breakpoints: {
-      320: {
-        slidesPerView: 1,
+      0: {
+        slidesPerView: 2,
         spaceBetween: 20
       },
       377: {
